@@ -11,9 +11,9 @@ export default function QuestionContainer() {
         setQuestion(e.target.value);
     }
 
-    function handleQuestionSubmit() {
+    function handleQuestionSubmit(e: React.MouseEvent<HTMLButtonElement>) {
         (async () => {
-            const prompt = question;
+            const prompt = "Context: Answer the question as a " + (e.target as HTMLButtonElement).value + " know it all and keep responses to no more than 75 words. Question: " + question;
             const result = await model.generateContent(prompt);
             setAnswer(result.response.text());
           })();
@@ -33,15 +33,18 @@ export default function QuestionContainer() {
                 <button 
                     className={styles.button} 
                     onClick={handleQuestionSubmit}
+                    value="funny"
                     >Ask funny bot</button>
                 <button 
                     className={styles.button} 
                     onClick={handleQuestionSubmit}
+                    value="rude"
                     >Ask rude bot</button>
                 <button 
                     className={styles.button} 
                     onClick={handleQuestionSubmit}
-                    >Ask nerd bot</button>
+                    value="happy"
+                    >Ask happy bot</button>
                 </div>
             </div>
                 <div className={styles.answerContainer}>
