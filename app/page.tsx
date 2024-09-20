@@ -4,6 +4,7 @@ import React from 'react';
 import styles from'./page.module.css';
 import Lottie  from 'lottie-react';
 import animationData from './components/animation.json'; 
+import QuestionContainer from './components/questionContainer';
 
 function App() {
   //const [question, setQuestion] = useState('');
@@ -22,15 +23,7 @@ function App() {
         <Lottie animationData={animationData} loop={true} />
         </div>
       </header>
-      <div className={styles.questionContainer}>
-        <p>Hi, what is your question??</p>
-        <input className={styles.questionContainerBox}
-          type="text"
-          //value={question}
-          placeholder="Type your question here"
-        />
-        <button className={styles.button} >Ask your question</button>
-      </div>
+      <QuestionContainer />
       <div className={styles.answerContainer}>
         <p>This is the answer to your question</p>
         <input className={styles.answerContainerBox}
