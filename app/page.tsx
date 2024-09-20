@@ -24,11 +24,6 @@ function App() {
         </div>
       </header>
       <QuestionContainer />
-      <div className={styles.answerContainer}>
-        <p>This is the answer to your question</p>
-        <input className={styles.answerContainerBox}
-        />
-      </div>
     </div>
   );
 }
