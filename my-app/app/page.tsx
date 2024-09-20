@@ -23,7 +23,7 @@ function App() {
         </div>
       </header>
       <div className={styles.questionContainer}>
-        <p>Hi, what is your question?</p>
+        <p>Hi, what is your question??</p>
         <input className={styles.questionContainerBox}
           type="text"
           //value={question}
