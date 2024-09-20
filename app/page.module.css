@@ -48,10 +48,27 @@
   width: 100%;
   border-radius: 5px;
   border: 1px solid #CCC;
-  font-size: 12px;
+  font-size: 12px; 
+}
+
+.questionContainerBox:focus {
+  border: 1px solid #ff5100;
+}
+
+.questionContainerBox:hover {
+  border: 1px solid #ff5100;
+}
+
+.buttonsGroup {
+  display: flex;
+  justify-content: space-around;
+  /* align-content: space-between; */
+  margin: 20px auto;
+  width: 100%;
 }
 
 .button {
+  /* justify-content: space-between; */
   margin-top: 30px;
   padding: 10px 20px;
   background-color: #ff5100;
@@ -79,7 +96,5 @@
   padding: 10px;
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #CCC;
   font-size: 16px;
-  background-color: white;
 }

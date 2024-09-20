@@ -1,0 +1,89 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+/* General app container */
+.page_appContainer__N4LJA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #FFF9E2; /* Light yellow background */
+  font-family: Arial, sans-serif, 'Pacifico';
+}
+
+/* Header section */
+.page_header__oRW75 {
+  text-align: center;
+}
+
+.page_title__po7na {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff5100; /* Darker grey */
+}
+
+/* Icon container */
+.page_icon__HtCf9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* Question input section */
+.page_questionContainer__vld4K {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.page_questionContainerBox__MxX4t {
+  color: #CCC; 
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  font-size: 12px;
+}
+
+.page_button__52WaL {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #ff5100;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.page_button__52WaL:hover {
+  background-color: #8A6345; /* Darker brown on hover */
+}
+
+/* Answer container */
+.page_answerContainer__baVI3 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+  width: 70%;
+}
+
+.page_answerContainerBox__vBgbB  {
+  color: #4A4A4A;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  font-size: 16px;
+  background-color: white;
+}
+

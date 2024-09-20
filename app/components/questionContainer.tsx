@@ -29,10 +29,20 @@ export default function QuestionContainer() {
                 value={question}
                 placeholder="Type your question here"
                 />
+                <div className={styles.buttonsGroup}>
                 <button 
                     className={styles.button} 
                     onClick={handleQuestionSubmit}
-                >Ask your question</button>
+                    >Ask funny bot</button>
+                <button 
+                    className={styles.button} 
+                    onClick={handleQuestionSubmit}
+                    >Ask rude bot</button>
+                <button 
+                    className={styles.button} 
+                    onClick={handleQuestionSubmit}
+                    >Ask nerd bot</button>
+                </div>
             </div>
                 <div className={styles.answerContainer}>
                 <p>This is the answer to your question</p>
