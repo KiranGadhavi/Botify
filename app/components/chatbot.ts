@@ -1,7 +1,12 @@
-import { GoogleGenerativeAI } from "@google/generative-ai"
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const api_key='AIzaSyCRAgC2pLZ9EZPZSx4cyCyuV3Atbsh5QrA'
+const api_key = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 
-// Make sure to include these imports:
+if (!api_key) {
+  throw new Error(
+    "NEXT_PUBLIC_GOOGLE_API_KEY is not set in environment variables"
+  );
+}
+
 const genAI = new GoogleGenerativeAI(api_key);
-export const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+export const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
